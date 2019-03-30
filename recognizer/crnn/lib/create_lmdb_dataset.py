@@ -4,9 +4,9 @@ import cv2
 import numpy as np
 import os
 
-OUT_PATH = '/home/ljs/OCR_dataset/CRNN_DATA/test_lmdb'
-IN_PATH = '/home/ljs/OCR_dataset/CRNN_DATA/images/360_test.txt'
-PREFIX = '/home/ljs/OCR_dataset/CRNN_DATA/images'
+OUT_PATH = '/home/lz/PycharmProjects/Lets_OCR/recognizer/crnn/CRNN_DATA/test_lmdb'
+IN_PATH = '/home/lz/PycharmProjects/Lets_OCR/recognizer/crnn/data/image/label.txt'
+PREFIX = '/home/lz/PycharmProjects/Lets_OCR/recognizer/crnn/data/image'
 
 
 def checkImageIsValid(imageBin):
@@ -89,6 +89,6 @@ if __name__ == '__main__':
 
     labelList = []
     for line in imagePathList:
-        word = line.split()[1]
-        labelList.append(word)
+        word = line.split(" ")[1]
+        labelList.append(word.strip('\n'))
     createDataset(outputPath, imagePathList, labelList)
