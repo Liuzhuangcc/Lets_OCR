@@ -1,4 +1,4 @@
-#coding=utf-8
+# coding=utf-8
 
 import Config
 import random
@@ -52,15 +52,15 @@ def val(net, da, criterion, max_iter=100):
         sim_preds = converter.decode(preds.data, preds_size.data, raw=False)
         list_1 = []
         for i in cpu_texts:
-            list_1.append(i.decode('utf-8','strict'))
-        #print(sim_preds)
+            list_1.append(i.decode('utf-8', 'strict'))
+        # print(sim_preds)
         for pred, target in zip(sim_preds, list_1):
             if pred == target:
                 n_correct += 1
 
-    #raw_preds = converter.decode(preds.data, preds_size.data, raw=True)[:Config.test_disp]
-    #for raw_pred, pred, gt in zip(raw_preds, sim_preds, cpu_texts):
-        #print('%-20s => %-20s, gt: %-20s' % (raw_pred, pred, gt))
+    # raw_preds = converter.decode(preds.data, preds_size.data, raw=True)[:Config.test_disp]
+    # for raw_pred, pred, gt in zip(raw_preds, sim_preds, cpu_texts):
+    # print('%-20s => %-20s, gt: %-20s' % (raw_pred, pred, gt))
 
     accuracy = n_correct / float(max_iter * Config.batch_size)
     print('Test loss: %f, accuray: %f' % (loss_avg.val(), accuracy))
@@ -76,9 +76,10 @@ def trainBatch(net, criterion, optimizer, train_iter):
     lib.dataset.loadData(length, l)
 
     preds = net(image)
-    #print("preds.size=%s" % preds.size)
+    # print("preds.size=%s" % preds.size)
     preds_size = Variable(torch.IntTensor([preds.size(0)] * batch_size))  # preds.size(0)=w=22
-    cost = criterion(preds, text, preds_size, length) / batch_size  # length= a list that contains the len of text label in a batch
+    cost = criterion(preds, text, preds_size,
+                     length) / batch_size  # length= a list that contains the len of text label in a batch
     net.zero_grad()
     cost.backward()
     optimizer.step()
@@ -107,7 +108,8 @@ if __name__ == '__main__':
         print('Using cpu mode')
 
     train_dataset = lib.dataset.lmdbDataset(root=Config.train_data)
-    test_dataset = lib.dataset.lmdbDataset(root=Config.test_data, transform=lib.dataset.resizeNormalize((Config.img_width, Config.img_height)))
+    test_dataset = lib.dataset.lmdbDataset(root=Config.test_data,
+                                           transform=lib.dataset.resizeNormalize((Config.img_width, Config.img_height)))
     assert train_dataset
 
     # images will be resize to 32*100
@@ -118,11 +120,11 @@ if __name__ == '__main__':
         collate_fn=lib.dataset.alignCollate(imgH=Config.img_height, imgW=Config.img_width))
 
     n_class = len(Config.alphabet) + 1  # for python3
-    #n_class = len(Config.alphabet.decode('utf-8')) + 1  # for python2
+    # n_class = len(Config.alphabet.decode('utf-8')) + 1  # for python2
     print("alphabet class num is %s" % n_class)
 
     converter = lib.convert.strLabelConverter(Config.alphabet)
-    #converter = lib.convert.StrConverter(Config.alphabet)
+    # converter = lib.convert.StrConverter(Config.alphabet)
     # print(converter.dict)
 
     criterion = CTCLoss()
@@ -148,9 +150,9 @@ if __name__ == '__main__':
     loss_avg = lib.utility.averager()
 
     optimizer = optim.RMSprop(net.parameters(), lr=Config.lr)
-    #optimizer = optim.Adadelta(net.parameters(), lr=Config.lr)
-    #optimizer = optim.Adam(net.parameters(), lr=Config.lr,
-                           #betas=(Config.beta1, 0.999))
+    # optimizer = optim.Adadelta(net.parameters(), lr=Config.lr)
+    # optimizer = optim.Adam(net.parameters(), lr=Config.lr,
+    # betas=(Config.beta1, 0.999))
 
     for epoch in range(Config.epoch):
         train_iter = iter(train_loader)
