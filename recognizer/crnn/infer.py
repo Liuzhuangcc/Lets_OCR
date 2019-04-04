@@ -13,7 +13,7 @@ import Config
 
 os.environ['CUDA_VISIBLE_DEVICES'] = "0"
 
-crnn_model_path = './w160_bs64_model/netCRNN_59_200.pth'
+crnn_model_path = './w160_bs64_model/netCRNN_4_48000.pth'
 IMG_ROOT = './test_2'
 running_mode = 'gpu'
 alphabet = alphabets.alphabet
