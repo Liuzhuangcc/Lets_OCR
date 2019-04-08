@@ -134,6 +134,9 @@ if __name__ == '__main__':
 
     net.apply(lib.utility.weights_init)
 
+    # 加载权重
+    net.load_state_dict(torch.load('w160_bs64_model/netCRNN_199_200.pth'))
+
     image = torch.FloatTensor(Config.batch_size, 3, Config.img_height, Config.img_width)
     text = torch.IntTensor(Config.batch_size * 5)
     length = torch.IntTensor(Config.batch_size)

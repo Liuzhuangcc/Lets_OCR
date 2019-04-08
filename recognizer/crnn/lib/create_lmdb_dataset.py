@@ -89,6 +89,7 @@ if __name__ == '__main__':
 
     labelList = []
     for line in imagePathList:
-        word = "".join(line.split(" ", 1)[1].split(' '))
+        word = "".join(line.split(" ", 1)[1].split(" "))
+        # print("word", word)
         labelList.append(word.strip('\n'))
     createDataset(outputPath, imagePathList, labelList)
