@@ -1,0 +1,132 @@
+/home/lz/.conda/envs/torch/bin/python3.6 /home/lz/PycharmProjects/Lets_OCR/recognizer/crnn/infer.py
+loading pretrained model from ./w160_bs64_model/netCRNN_4_48000.pth
+=============================================
+ocr image is ./test_2/00000.jpg
+results: NR．D.I.Y．(KUCHAI）SDNBHD
+elapsed time: 0.0289914608001709
+=============================================
+ocr image is ./test_2/00001.jpg
+results: (COReg:750441-）
+elapsed time: 0.011309623718261719
+=============================================
+ocr image is ./test_2/00002.jpg
+results: L0T1851-A&1851-B,JALANPB6，
+elapsed time: 0.01575946807861328
+=============================================
+ocr image is ./test_2/00003.jpg
+results: KAWASANPERINDUSTRIANBALAKONG，
+elapsed time: 0.0159757137298584
+=============================================
+ocr image is ./test_2/00004.jpg
+results: 43300SERIKEBANGN，SELANGOR
+elapsed time: 0.015431880950927734
+=============================================
+ocr image is ./test_2/00005.jpg
+results: （GSTIDNO:000473782512)
+elapsed time: 0.01380014419555664
+=============================================
+ocr image is ./test_2/00006.jpg
+results: (STRANDNALLKOTADA州ANSARA）
+elapsed time: 0.015066146850585938
+=============================================
+ocr image is ./test_2/00007.jpg
+results: -TAXINVOICE-
+elapsed time: 0.01037144660949707
+=============================================
+ocr image is ./test_2/00008.jpg
+results: PYEDRAINCLOGFREECLDRO2-1000NL
+elapsed time: 0.017055273056030273
+=============================================
+ocr image is ./test_2/00009.jpg
+results: *S
+elapsed time: 0.006123781204223633
+=============================================
+ocr image is ./test_2/00010.jpg
+results: WA05-12
+elapsed time: 0.00838923454284668
+=============================================
+ocr image is ./test_2/00011.jpg
+results: 9556268000210
+elapsed time: 0.009958267211914062
+=============================================
+ocr image is ./test_2/00012.jpg
+results: 3X15.00
+elapsed time: 0.008361339569091797
+=============================================
+ocr image is ./test_2/00013.jpg
+results: 45.00
+elapsed time: 0.0065801143646240234
+=============================================
+ocr image is ./test_2/00014.jpg
+results: Item(s)∶1
+elapsed time: 0.008332490921020508
+=============================================
+ocr image is ./test_2/00015.jpg
+results: Qty(s）∶3
+elapsed time: 0.008090496063232422
+=============================================
+ocr image is ./test_2/00016.jpg
+results: TOTALINCL．GST@6%
+elapsed time: 0.011500835418701172
+=============================================
+ocr image is ./test_2/00017.jpg
+results: R州45.00
+elapsed time: 0.007468700408935547
+=============================================
+ocr image is ./test_2/00018.jpg
+results: CARD
+elapsed time: 0.006378889083862305
+=============================================
+ocr image is ./test_2/00019.jpg
+results: R州45.00
+elapsed time: 0.007499217987060547
+=============================================
+ocr image is ./test_2/00020.jpg
+results: GSTSummary
+elapsed time: 0.009123086929321289
+=============================================
+ocr image is ./test_2/00021.jpg
+results: Amt(R州)
+elapsed time: 0.007481575012207031
+=============================================
+ocr image is ./test_2/00022.jpg
+results: Tax(R州)
+elapsed time: 0.007222890853881836
+=============================================
+ocr image is ./test_2/00023.jpg
+results: GSTS您6%
+elapsed time: 0.007895469665527344
+=============================================
+ocr image is ./test_2/00024.jpg
+results: 42.45
+elapsed time: 0.006711721420288086
+=============================================
+ocr image is ./test_2/00025.jpg
+results: 2.55
+elapsed time: 0.006327629089355469
+=============================================
+ocr image is ./test_2/00026.jpg
+results: 12-03-1814:37SH02B011
+elapsed time: 0.01261448860168457
+=============================================
+ocr image is ./test_2/00027.jpg
+results: I1R000183898
+elapsed time: 0.009823799133300781
+=============================================
+ocr image is ./test_2/00028.jpg
+results: UPERATORSTNT-ALHILAN
+elapsed time: 0.012151956558227539
+=============================================
+ocr image is ./test_2/00029.jpg
+results: EXCHANGEAREALLOWEDWITHIN
+elapsed time: 0.013616800308227539
+=============================================
+ocr image is ./test_2/00030.jpg
+results: 7DAYSWITHRECEIPT．
+elapsed time: 0.011141777038574219
+=============================================
+ocr image is ./test_2/00031.jpg
+results: STRICTLYNOCASHREFUND．
+elapsed time: 0.012458086013793945
+
+Process finished with exit code 0

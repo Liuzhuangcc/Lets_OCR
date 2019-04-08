@@ -1,0 +1,132 @@
+/home/lz/.conda/envs/torch/bin/python3.6 /home/lz/PycharmProjects/Lets_OCR/recognizer/crnn/infer.py
+loading pretrained model from ./w160_bs64_model/netCRNN_59_200.pth
+=============================================
+ocr image is ./test_2/00000.jpg
+results: MR.D.I.Y.(KUCHAI)SDNBHD
+elapsed time: 0.026446104049682617
+=============================================
+ocr image is ./test_2/00001.jpg
+results: (COREG:750441-W)
+elapsed time: 0.010612010955810547
+=============================================
+ocr image is ./test_2/00002.jpg
+results: PLOT1851-A&1851-B,JALANKPB6,M
+elapsed time: 0.014943122863769531
+=============================================
+ocr image is ./test_2/00003.jpg
+results: OKAWASANPERINDUSTRIANBALAKONG,
+elapsed time: 0.014974117279052734
+=============================================
+ocr image is ./test_2/00004.jpg
+results: 43300SERIKEMBANGAN,SELANGOR
+elapsed time: 0.014487981796264648
+=============================================
+ocr image is ./test_2/00005.jpg
+results: (GSTIDNO:000473792512)
+elapsed time: 0.013209342956542969
+=============================================
+ocr image is ./test_2/00006.jpg
+results: (STRANDMALLKOTADAMANSARA)
+elapsed time: 0.014080286026000977
+=============================================
+ocr image is ./test_2/00007.jpg
+results: -TAXINVOICE-
+elapsed time: 0.00966954231262207
+=============================================
+ocr image is ./test_2/00008.jpg
+results: QPYEORAINCLOGFREECLDR02-1000MLM
+elapsed time: 0.016214609146118164
+=============================================
+ocr image is ./test_2/00009.jpg
+results: *S
+elapsed time: 0.005589962005615234
+=============================================
+ocr image is ./test_2/00010.jpg
+results: WA05-12
+elapsed time: 0.007781028747558594
+=============================================
+ocr image is ./test_2/00011.jpg
+results: 9556268000210
+elapsed time: 0.00911569595336914
+=============================================
+ocr image is ./test_2/00012.jpg
+results: 3X15.00
+elapsed time: 0.007735729217529297
+=============================================
+ocr image is ./test_2/00013.jpg
+results: 45.00
+elapsed time: 0.006491184234619141
+=============================================
+ocr image is ./test_2/00014.jpg
+results: ITEM(S):1
+elapsed time: 0.008302927017211914
+=============================================
+ocr image is ./test_2/00015.jpg
+results: OTY(S):3
+elapsed time: 0.007999420166015625
+=============================================
+ocr image is ./test_2/00016.jpg
+results: TOTALINCL.GST@6%:
+elapsed time: 0.010883092880249023
+=============================================
+ocr image is ./test_2/00017.jpg
+results: RM45.00
+elapsed time: 0.007501840591430664
+=============================================
+ocr image is ./test_2/00018.jpg
+results: CARD
+elapsed time: 0.0063059329986572266
+=============================================
+ocr image is ./test_2/00019.jpg
+results: ORM45.00
+elapsed time: 0.007882356643676758
+=============================================
+ocr image is ./test_2/00020.jpg
+results: GSTSUMARY
+elapsed time: 0.008580446243286133
+=============================================
+ocr image is ./test_2/00021.jpg
+results: AMT(RM)
+elapsed time: 0.007490873336791992
+=============================================
+ocr image is ./test_2/00022.jpg
+results: TAX(RM)
+elapsed time: 0.0075299739837646484
+=============================================
+ocr image is ./test_2/00023.jpg
+results: GSTS@6%
+elapsed time: 0.007503986358642578
+=============================================
+ocr image is ./test_2/00024.jpg
+results: 42.45
+elapsed time: 0.006630659103393555
+=============================================
+ocr image is ./test_2/00025.jpg
+results: 02.556
+elapsed time: 0.006669521331787109
+=============================================
+ocr image is ./test_2/00026.jpg
+results: 12-03-1814:37SH028011
+elapsed time: 0.013127326965332031
+=============================================
+ocr image is ./test_2/00027.jpg
+results: T1R000183898
+elapsed time: 0.009111166000366211
+=============================================
+ocr image is ./test_2/00028.jpg
+results: OPERATORSTMT-AZMIZAN
+elapsed time: 0.012357473373413086
+=============================================
+ocr image is ./test_2/00029.jpg
+results: DEXCHANGEAREALONMEDWITHIN
+elapsed time: 0.013756513595581055
+=============================================
+ocr image is ./test_2/00030.jpg
+results: 7DAYSWITHRECEIPT.:
+elapsed time: 0.011280536651611328
+=============================================
+ocr image is ./test_2/00031.jpg
+results: STRICTLYNOCASHREFUND:
+elapsed time: 0.012507438659667969
+
+Process finished with exit code 0
